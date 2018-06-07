@@ -1,0 +1,17 @@
+language: r
+cache: packages
+sudo: false
+dist: trusty
+
+r_github_packages:
+  - jimhester/covr 
+
+after_success:
+  - Rscript -e 'covr::codecov()'
+
+notifications:
+  email:
+    on_success: never
+    on_failure: never
+  slack:
+    secure: Mv3lFHkQvaPt1GAkAtdIsEvW9c0gSHhgLE5rx4u3Ex1gZYdCOFciimT8RcrqUi9EUMZ2xaqPPQYW189PGZFnjvjmuCfOUsXRxMvvZytjcjSagEuNKrRGKLBBXd4pSDqVtZTgTihkOyxfHSWGG7kGvZhan8sCmKNnun7d0BjmmgQ=

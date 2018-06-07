@@ -1,0 +1,21 @@
+Package: feetures
+Type: Package
+Title: Feature Flags
+Description: Feature flags.
+Version: 0.0.1.9110
+Authors@R: c(
+      person("Scott", "Chamberlain", role = c("aut", "cre"),
+        email = "sckott@protonmail.com", 
+        comment = c(ORCID = "0000-0003-1444-9135"))
+    )
+License: MIT + file LICENSE
+URL: https://github.com/ropenscilabs/feetures
+BugReports: https://github.com/ropenscilabs/feetures/issues
+LazyData: true
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+Imports:
+    R6 (>= 2.2.0)
+Suggests:
+    testthat
+RoxygenNote: 6.0.1
